@@ -127,7 +127,16 @@ input:user-invalid {
   border: 1px solid red;
 }
 
+input#password:user-valid,
+input#confirm-password:user-valid {
+  background-color: rgb(86, 252, 80);
+}
+
 input:focus {
   border: 1px solid blue;
   box-shadow: 2px 2px 3px black;
+}
+
+p + p {
+  padding-top: 16px;
 }
