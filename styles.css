@@ -1,17 +1,28 @@
-* {
-  /* color: white; */
-  /* background-color: #0f0f0f; */
-  /* border: 1px solid green; */
+:root {
+  --padding-sign-in: 32px;
 }
-h1 {
+
+* {
   margin: 0;
+}
+
+h1 {
   padding: 0;
 }
 
 body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   display: flex;
-  margin: 0;
+  line-height: 1.5;
   padding: 0;
+}
+
+div.sign-in {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
 }
 
 div.placeholder {
@@ -26,21 +37,49 @@ div.group {
   padding: 16px 0px;
 }
 
+div.top-text {
+  font-weight: bold;
+  padding: var(--padding-sign-in);
+}
+
 div.label-pair {
   display: flex;
   flex-direction: column;
 }
 
-div.sign-in {
-  flex: 1;
-}
-
 div.groups {
   background-color: aliceblue;
   border-bottom: 2px dashed whitesmoke;
-  padding: 32px;
+  padding: var(--padding-sign-in);
 }
 
-form > div {
-  margin: 16px 0px;
+div.confirm-account {
+  padding: var(--padding-sign-in);
 }
+
+button.create-account-button {
+  padding: 8px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.6;
+  background-color: rgb(142, 79, 201);
+  box-shadow: 1px 1px 3px darkblue;
+}
+
+button.create-account-button:hover {
+  background-color: rgb(111, 61, 158);
+}
+
+div.already-x > p {
+  padding-top: 16px;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* form > div {
+  margin: 16px 0px;
+} */
