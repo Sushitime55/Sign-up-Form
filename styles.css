@@ -80,6 +80,10 @@ a {
   text-decoration: none;
 }
 
+input:user-invalid {
+  border: 1px solid red;
+}
+
 /* form > div {
   margin: 16px 0px;
 } */

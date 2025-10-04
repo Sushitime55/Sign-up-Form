@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -24,34 +25,38 @@
                 <h1>Create Account</h1>
                 <div class="group">
                     <div class="label-pair">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
                     </div>
                     <div class="label-pair">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
                     </div>
                 </div>
 
                 <div class="group">
                     <div class="label-pair">
-                        <label for="user_email">Email Address:</label>
-                        <input type="email" name="user_email" id="user_email">
+                        <label for="user_email">Email Address</label>
+                        <input type="email" name="user_email" id="user_email" required>
                     </div>
                     <div class="label-pair">
-                        <label for="phone-number">Phone Number:</label>
-                        <input type="tel" name="phone-number" id="phone-number">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" required>
                     </div>
                 </div>
 
                 <div class="group">
                     <div class="label-pair">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{1,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter"
+                            required>
                     </div>
                     <div class="label-pair">
-                        <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password"
+                            required>
                     </div>
                 </div>
             </div>
