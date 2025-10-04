@@ -1,5 +1,6 @@
 :root {
   --padding-sign-in: 32px;
+  --right-side-background: rgb(183, 190, 196);
 }
 
 * {
@@ -18,6 +19,10 @@ svg {
   display: block;
   max-width: 100%;
   max-height: 100%;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 body {
@@ -53,6 +58,7 @@ div.sign-in {
   flex-direction: column;
   flex: 1;
   justify-content: center;
+  background-color: var(--right-side-background);
 }
 
 div.group {
@@ -69,23 +75,30 @@ div.top-text {
 div.label-pair {
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
 }
 
 div.groups {
-  background-color: aliceblue;
-  border-bottom: 2px dashed whitesmoke;
+  background-color: white;
+  box-shadow: 2px 2px 3px slategray;
   padding: var(--padding-sign-in);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 div.confirm-account {
   padding: var(--padding-sign-in);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button.create-account-button {
   padding: 8px 24px;
   border-radius: 6px;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.6;
   background-color: rgb(142, 79, 201);
   box-shadow: 1px 1px 3px darkblue;
@@ -105,7 +118,9 @@ a {
 }
 
 input {
-  border: 1px solid #e5e7eb;
+  border: 1px solid #d3d4d8;
+  font-size: 1.2rem;
+  border-radius: 4px;
 }
 
 input:user-invalid {
@@ -116,7 +131,3 @@ input:focus {
   border: 1px solid blue;
   box-shadow: 2px 2px 3px black;
 }
-
-/* form > div {
-  margin: 16px 0px;
-} */
