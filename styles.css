@@ -1,0 +1,23 @@
+* {
+  color: white;
+  background-color: #0f0f0f;
+  border: 1px solid green;
+}
+
+div.placeholder {
+  height: 100vh;
+  width: 40vw;
+  background-color: slategray;
+}
+
+body {
+  display: flex;
+}
+
+input {
+  display: inline-block;
+}
+
+.sign-in {
+  flex: 1;
+}
